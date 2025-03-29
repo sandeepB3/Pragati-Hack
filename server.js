@@ -7,7 +7,7 @@ const app = express();
 const port = 3000;
 
 // Initialize the Groq client
-const groq = new Groq({ apiKey: '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' });
+const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 
 // Configure Multer for file uploads
 const upload = multer({ dest: "uploads/" });
