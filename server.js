@@ -2,6 +2,9 @@ import express from "express";
 import multer from "multer";
 import fs from "fs";
 import Groq from "groq-sdk";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const app = express();
 const port = 3000;
